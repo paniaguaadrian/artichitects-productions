@@ -1,11 +1,9 @@
 @import "variables";
+@import "mixins";
 @import "globals";
-@import "menu";
 @import "header";
 @import "we";
 @import "services";
 @import "packs";
 @import "footer";
 @import "copyright";
-// Es importante que si hacemos un scss de variables, sea la primera en aparecer.
-// Crear un scss para cada elemento, seccion que creamos y importarlo aqui

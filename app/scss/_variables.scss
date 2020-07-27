@@ -2,21 +2,21 @@
 
 $darkpurple: rgb(80, 17, 151);
 $darkblack: rgb(0, 0, 0);
+$white: rgb(255, 255, 255);
+$blue: rgb(5, 225, 218);
 
 // Fonts
-$title-font: "Public Sans",
-sans-serif;
 
-$body-font: "Arial Black";
+$header-font: "Varela Round", sans-serif;
+
+$title-font: "Lato", sans-serif;
+
+$body-font: "Quicksand", sans-serif;
 
 // Font sizes
 
-$font-sm: 0.875rem;
-$font-med: 1.125rem;
-
-// Una vez tenemos los colores definidos con sus variables, podemos usarlo en vez de escribir el codigo del color.
-
-// ejemplo
-// background-color: $darkpurple;
-// ejemplo
-// font-size: $font-sm;
+$font-vsm: 1rem;
+$font-sm: 1.2rem;
+$font-med: 2rem;
+$font-lg: 3rem;
+$font-ex: 6rem;
