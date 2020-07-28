@@ -14,7 +14,7 @@
   &__menu {
     // mobile menu
 
-    > span {
+    >span {
       display: block;
       width: 26px;
       height: 2px;
@@ -28,19 +28,65 @@
 
   &__links {
     a {
+      position: relative;
       color: $white;
       font-size: $font-vsm;
-      padding: 4px 30px;
+      font-weight: 600;
+      transition: color 300ms ease-in-out;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        height: 3px;
+        background: linear-gradient(to right, $darkpurple, $blue);
+        opacity: 0;
+        left: 0;
+        right: 0;
+        bottom: -15px;
+        transition: opacity 300ms ease-in-out;
+
+      }
+
+      &:not(:last-child) {
+        margin-right: 2rem;
+
+      }
+
+      &:hover {
+        color: $blue;
+
+        &::before {
+          opacity: 1;
+        }
+      }
     }
   }
 
   &__socials {
     border: 1px solid $white;
     padding: 4px;
+    margin-right: 6.25rem;
+
 
     a {
       color: $white;
-      padding: 10px;
+      padding: 0.625rem;
+      transition: color 400ms;
+
+      &:hover {
+        &:first-child {
+          color: #4267B2;
+        }
+
+        &:nth-child(0n+2) {
+          color: #FF0000;
+        }
+
+        &:last-child {
+          color: #1DA1F2;
+        }
+      }
     }
   }
 }
