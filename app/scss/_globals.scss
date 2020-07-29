@@ -7,7 +7,8 @@
 html {
   font-size: 100%;
   box-sizing: border-box;
-  background-color: $white;
+  background-color: $darkblack;
+  scroll-behavior: smooth;
 }
 
 html,
@@ -31,7 +32,7 @@ body {
 
 h1 {
   font-family: $header-font;
-  font-size: $font-ex;
+  margin: 0;
 }
 
 h2,
@@ -40,7 +41,6 @@ h4,
 h5,
 h6 {
   font-family: $title-font;
-  font-size: $font-lg;
 }
 
 a,
@@ -58,9 +58,45 @@ ul {
 // Spacing
 
 .container {
-  padding-left: 16px;
-  padding-right: 16px;
+
+  max-width: 120rem;
+  margin: 0 auto;
+
+  &--pall {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+
+  }
+
+  &--py {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  &--px {
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+
+  &--pt {
+    padding-top: 1rem;
+  }
+
+  &--pl {
+    padding-left: 1rem;
+  }
+
+  &--pb {
+    padding-bottom: 1rem;
+  }
+
+  &--pr {
+    padding-right: 1rem;
+  }
 }
+
 
 
 // Flexbox ***************************************
@@ -79,13 +115,17 @@ ul {
   &-ai-c {
     align-items: center;
   }
+
+  &-dir-r {
+    flex-direction: row;
+  }
 }
 
 // Button  ***************************************
 // html <button type="button">Get in touch!</button>
 button,
 .button {
-  padding: 5px; // we can change that
+  padding: 0.625rem; // we can change that
   cursor: pointer; // esto si que es necesario
 }
 

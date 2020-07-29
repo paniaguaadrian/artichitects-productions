@@ -23,7 +23,7 @@
     <header class="header">
         <div class="overlay has-fade"></div>
 
-        <nav class="container flex flex-jc-sb flex-ai-c">
+        <nav class="container container--px flex flex-jc-sb flex-ai-c">
             <a href="#" class="header__logo">
                 <p>ARTCHITECTS</p>
             </a>
@@ -64,35 +64,127 @@
             <a href="#">¿Quiénes somos?</a>
             <a href="#">Servicios</a>
             <a href="#">Packs</a>
+            <div class="socials-mobile flex flex-dir-r flex-jc-c flex-ai-c">
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fab fab-icon fa-facebook-f"></i>
+                </a>
+
+                <a ref="https://www.facebook.com" target="_blank">
+                    <i class="fab fab-icon fa-youtube"></i>
+                </a>
+
+                <a href="https://www.facebook.com" target="_blank">
+                    <i class="fab fab-icon fa-twitter"></i>
+                </a>
+            </div>
 
         </div>
-
     </header>
 
-    <div class="textexample container">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil fugit eum deserunt iusto, nesciunt earum eaque
-        quas
-        aliquam eius? Repellendus eum omnis nihil aperiam natus dolorem nulla, quo laudantium doloremque, illo officia
-        unde.
-        Qui beatae earum sit quia ad in fuga voluptatum ducimus excepturi quasi odio quaerat, quidem est consequuntur
-        praesentium molestias iusto soluta commodi explicabo reiciendis veritatis mollitia quo? Mollitia doloremque
-        architecto, officiis cum repellat veritatis perspiciatis similique libero. Cumque quod iusto ipsum ipsam
-        temporibus,
-        maiores officiis fuga odio quae illum quas ducimus. Iure, sint eum nemo inventore laudantium, facilis magnam
-        nulla,
-        aliquid ea ipsum dolore nam reprehenderit reiciendis.
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil fugit eum deserunt iusto, nesciunt earum eaque
-        quas
-        aliquam eius? Repellendus eum omnis nihil aperiam natus dolorem nulla, quo laudantium doloremque, illo officia
-        unde.
-        Qui beatae earum sit quia ad in fuga voluptatum ducimus excepturi quasi odio quaerat, quidem est consequuntur
-        praesentium molestias iusto soluta commodi explicabo reiciendis veritatis mollitia quo? Mollitia doloremque
-        architecto, officiis cum repellat veritatis perspiciatis similique libero. Cumque quod iusto ipsum ipsam
-        temporibus,
-        maiores officiis fuga odio quae illum quas ducimus. Iure, sint eum nemo inventore laudantium, facilis magnam
-        nulla,
-        aliquid ea ipsum dolore nam reprehenderit reiciendis.
-    </div>
+
+    <section class="hero container container--py">
+        <div class="hero__image"></div>
+
+        <div class="hero__text container--pall">
+            <h1>La discográfica diferente al resto</h1>
+            <hr class="hide-for-desktop">
+            <p>La manera en la que consumimos Arte, ha cambiado por completo
+                con las nuevas generaciones, los artistas cada vez gozan de menos
+                apoyo para demostrar al mundo su talento y capacidades.
+            </p>
+            <p>Artchitects ha nacido para ser tu luz en el camino y que nunca más
+                sientas la imposibilidad de lograr tus objetivos.</p>
+
+
+            <button type=button href="#service" class="button hero__button"
+                onClick="document.getElementById('service').scrollIntoView();">Empieza tu carrera</button>
+
+
+
+        </div>
+    </section>
+
+
+    <section id="service" class="services container container--pall">
+
+        <div class="services__header container container--pall">
+            <h2>¡Crece con nosotros!</h2>
+            <p>Artchitects Productions nace con un objetivo muy claro: el acompañamiento profesionalizado de artistas.
+            </p>
+        </div>
+
+
+        <div class="services__grid container container--pall">
+
+            <div class="services__item">
+                <div class="services__icon">
+                    <img src="images/coaching_image.svg" alt="coaching image">
+                </div>
+                <div class="services__title">
+                    <h3>Coaching</h3>
+                </div>
+                <div class="services__description">
+                    <p>Sabemos que para llegar a ser un gran artista no solo basta con el talento, nos preocupamos en
+                        desarrollar al máximo tus habilidades como músico, convierte tu instrumento en una
+                        extensión de ti.</p>
+                </div>
+            </div>
+
+            <div class="services__item">
+                <div class="services__icon">
+                    <img src="images/composicion_image.svg" alt="coaching image">
+                </div>
+                <div class="services__title">
+                    <h3>Composición</h3>
+                </div>
+                <div class="services__description">
+                    <p>Artchitects rompe la barrera de tu mente, y abre paso a la inspiración, creamos para ti las
+                        canciones con las que siempre has soñado, le damos vida a tus emociones.</p>
+                </div>
+            </div>
+
+            <div class="services__item">
+                <div class="services__icon">
+                    <img src="images/estudio_image.svg" alt="coaching image">
+                </div>
+                <div class="services__title">
+                    <h3>El Estudio</h3>
+                </div>
+                <div class="services__description">
+                    <p>Lleva tus proyectos al siguiente nivel. Produce, mezcla y masteriza tus canciones recibiendo
+                        nuestro
+                        apoyo durante todo el proceso. </p>
+                </div>
+            </div>
+
+            <div class="services__item">
+                <div class="services__icon">
+                    <img src="images/identidad_image.svg" width=100px alt="coaching image">
+                </div>
+                <div class="services__title">
+                    <h3>Identidad Artística</h3>
+                </div>
+                <div class="services__description">
+                    <p>Desde Artchitects trabajamos para construir tu identidad como artista, potenciamos tu confianza
+                        escénica y cultivamos tu carisma para crear tu marca personal.
+                    </p>
+
+                </div>
+            </div>
+
+
+        </div>
+        <button type=button href="#" class="button hero__button">Todos los servicios</button>
+
+    </section>
+
+    <!-- 
+        - Porque escogernos? = nuestros servicios
+        - Quienes somos 
+        - packs -->
+
+
+
 
 
 

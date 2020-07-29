@@ -50,10 +50,10 @@
 
     >span {
       display: block;
-      width: 26px;
+      width: 1.625rem;
       height: 2px;
       background-color: $white;
-      transition: all 300ms ease-in-out;
+      transition: all 350ms ease-in-out;
       transform-origin: 3.8px 1.6px;
 
       &:not(:last-child) {
@@ -82,6 +82,22 @@
       text-align: center;
       font-size: $font-sm;
 
+
+    }
+
+    .socials-mobile {
+      a:first-child {
+        color: #4267b2;
+      }
+
+      a:nth-child(0n + 2) {
+        color: #ff0000;
+      }
+
+      a:last-child {
+        color: #1da1f2;
+
+      }
     }
   }
 
@@ -97,12 +113,12 @@
         content: "";
         display: block;
         position: absolute;
-        height: 3px;
+        height: 2px;
         background: linear-gradient(to right, $darkpurple, $blue);
         opacity: 0;
         left: 0;
         right: 0;
-        bottom: -15px;
+        bottom: -0.9375rem;
         transition: opacity 300ms ease-in-out;
       }
 
@@ -121,7 +137,8 @@
   }
 
   &__socials {
-    border: 1px solid $white;
+    border: 2px solid $blue;
+    border-radius: 1.875rem;
     padding: 4px;
     margin-right: 6.25rem;
 
