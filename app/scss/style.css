@@ -392,7 +392,7 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-image: url(/images/hero__image.png);
+  background-image: url("https://raw.githubusercontent.com/paniaguaadrian/artichitects-productions/master/images/hero__image.png");
   background-size: 98%;
   background-repeat: no-repeat;
   background-position: center center;
