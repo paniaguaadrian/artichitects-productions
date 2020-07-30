@@ -21,6 +21,10 @@
     }
   }
 
+  .container {
+    padding: 6px 16px;
+  }
+
   nav {
     position: relative;
     background-color: $darkblack;
@@ -42,6 +46,8 @@
     p {
       font-size: $font-sm;
       color: $blue;
+      margin-bottom: 0;
+      margin-top: .5rem;
     }
   }
 
@@ -141,6 +147,10 @@
     border-radius: 1.875rem;
     padding: 4px;
     margin-right: 6.25rem;
+
+    @include breakpoint-up (large) {
+      margin-top: .5rem;
+    }
 
     a {
       color: $white;
