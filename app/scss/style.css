@@ -840,6 +840,17 @@ button,
   }
 }
 
+.form-container {
+  height: 50rem;
+  background-color: white;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .packs {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#501197), to(#501197));
   background-image: linear-gradient(#501197, #501197);
